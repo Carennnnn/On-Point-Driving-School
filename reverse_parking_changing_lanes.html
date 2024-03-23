@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Parking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .logo {
+            width: 20%; /* Make the image full width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure it's a block element to take full width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-info {
+            text-align: center; /* Centers the content horizontally */
+            font-size: 1rem; /* Adjust the font size as needed */
+            line-height: 1.3; /* Adjusts the line height for better readability */
+        }
+
+
+        .text-container, .adjustable-content {
+            line-height: 1.3;
+            display: flex;
+            align-items: flex-start; /* Adjusts alignment for items to start at the top */
+            margin-bottom: 20px; /* Adds some space between sections */
+        }
+
+        img.pic, video.vid {
+            width: 40%; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-left: 20px; /* Space between image and text */
+            margin-right: 20px;
+        }
+
+        .text-content {
+            flex: 1; /* Allows text content to fill the available space */
+        }
+
+        /* Adjusting list and heading within the text-container to ensure they don't fill the entire width on their own */
+        .text-container h1, .text-container ol,
+        .adjustable-content h1, .adjustable-content ol {
+            margin: 10px;
+        }
+
+        .button-container {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center; /* Center buttons horizontally */
+            flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+        }
+
+        .button {
+            margin: 5px; /* Add a bit of margin around buttons for spacing */
+            font-size: 1.2rem;
+        }
+        
+        /* Responsive adjustments for smaller screens */
+        @media screen and (max-width: 768px) {
+            .text-container, .adjustable-content {
+                flex-direction: column;
+            }
+
+            img.pic, video.vid {
+                width: 100%; /* Image takes full width on smaller screens */
+                margin: 0 0 20px 0; /* Reset margin for vertical layout */
+            }
+        }
+
+        body {
+            font-size: 16px; /* Fallback */
+            font-size: 1.3rem; /* Default font size */
+        }
+
+        /* Responsive font sizes using viewport width */
+        h1 {
+            padding-top: 1%;
+            padding-left: 1%;
+            font-size: 2vw;
+        }
+
+        p {
+            padding-left: 6%;
+        }
+
+        /* Adjust font sizes for smaller screens */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+                font-size: 0.875rem;
+            }
+
+            h1 {
+                font-size: 5vw;
+            }
+        }
+
+        /* Further adjustments for very small screens */
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 6vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="./images/logo.jpg" alt="ON POINT DRIVING SCHOOL" class="logo">
+    <div class="contact-info">
+        1061 Merivale Road, Suite #205, Ottawa ON, K1Z 6A9<br>
+        Phone: 613-581-8181, Cell: 613-818-8100<br>
+        Hashim
+    </div>    
+    <h1>12. Reverse Parking</h1>
+    <div class="text-container">
+        <div class="text-content">
+            <ol type="a">
+                <li>Keep the car straight in the centre of the road.</li>
+                <li>Signal to the right.</li>
+                <li>Line your shoulders up with the 3rd quarter of the second parking spot away.</li>
+                <li>Put the gear in reverse, holding the brakes.</li>
+                <li>Turn the steering wheels completely to the right.</li>
+                <li>Release the brakes.</li>
+                <li>Allow the car to move backwards. As soon as it becomes in line with the desired parking spot, turn the wheels twice to the left (bring the white tape at the top two times).</li>
+                <li>Stop the car, place the gear in the parking position, turn the hand brake up or on.</li>
+            </ol>    
+        </div>
+        <img src="./images/reverse_parking.jpg" alt="Reverse Parking" class="pic">
+    </div>
+    
+    <h1>13. Changing Lanes</h1>
+    <div class="adjustable-content">
+        <div class="text-content">
+            <ol type="a">
+                <li>Check your shoulders & blind spots for the side you would like to switch to.</li>
+                <li>Check the centre mirror for the cars behind you, making sure they are clearly visible in your mirror.</li>
+                <li>Signal towards the side you want to switch to.</li>
+                <li>Keep driving for approximately 5 seconds, gradually approaching the centre of the two lanes.</li>
+                <li>If it is safe and clear to merge onto the desired lane, proceed with the same speed of the traffic or slightly more, according to the conditions of the traffic.</li>
+                <li>Turn off your signal when you are in the desired lane.</li>
+            </ol>
+            <p>Position: Make sure the car is straight</p>
+        </div>
+        <video controls alt="Changing Lanes" class="vid">
+            <source src="./videos/changing_lanes.MOV">
+        </video>
+    </div>
+
+    <div class="button-container">
+        <button class="button" onclick="location.href='downhill_forward_parking.html'">Previous</button>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
